@@ -5,7 +5,9 @@ from allauth.account.forms import SignupForm  # 追加
 class ProfileForm(forms.Form):
     first_name = forms.CharField(max_length=30, label='姓')
     last_name = forms.CharField(max_length=30, label='名')
-    department = forms.CharField(max_length=30, label='所属', required=False)
+    description = forms.CharField(label='j自己紹介', widget=forms.Textarea(), required=False)
+    image = forms.ImageField(required=False, )
+    #department = forms.CharField(max_length=30, label='所属', required=False)
 
 
 class SignupUserForm(SignupForm):

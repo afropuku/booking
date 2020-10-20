@@ -129,8 +129,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 # MEDIA_URL = '/images/'
-
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # All-Auth setting
 
 SITE_ID = 1

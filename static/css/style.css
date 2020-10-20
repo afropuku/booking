@@ -91,3 +91,17 @@ main {
 .form-label-group input {
   border-radius: 2rem;
 }
+
+/* store */
+
+.storelist img {
+  height: 150px;
+  object-fit: contain;
+}
+
+/* staff */
+
+.stafflist img {
+  height: 250px;
+  object-fit: contain;
+}
